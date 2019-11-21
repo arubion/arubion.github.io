@@ -509,52 +509,48 @@
                 <h1 id="image-transfer-recommendations">Image Transfer Recommendations</h1>
 <p>When configuring DetectID Digital Onboarding to transfer image files, consider the following:</p>
 <blockquote>
-<p><strong>Note</strong>: Bear in mind that the dimensions and quality of the transferred files have an inverse relation with response times. It is necessary to find an adequate balance between image quality and response times, according to the secured entity’s use case</p>
+<p><strong>Note</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </blockquote>
 <h2 id="identity-validation-processes">Identity Validation Processes</h2>
 <table>
 <thead>
 <tr>
-<th><div style="width:145px">Characteristic</div></th>
-<th><div style="width:200px">Recommended Value</div></th>
-<th>Additional Comments</th>
+<th><div style="width:120px"><strong>General HTTP code</strong></div></th>
+<th><div style="width:85px"><strong>Specific code</strong></div></th>
+<th><div style="width:145px"><strong>Description</strong></div></th>
+<th><div style="width:145px"><strong>Message</strong></div></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Optimal dimensions</td>
-<td>820x615p and 1280x960p for PDF417</td>
-<td>none</td>
+<td>400</td>
+<td>Lorem</td>
+<td>The required parameter was not sent.</td>
+<td>Parameter <code>[PARAMETER]</code> not found</td>
 </tr>
 <tr>
-<td>Accepted dimensions</td>
-<td>820x615p to 3120x2340p</td>
-<td>none</td>
+<td>400</td>
+<td>Lorem</td>
+<td>The document photograph was not sent in Base64 format.</td>
+<td>Document image is not a valid base64 string.</td>
 </tr>
 <tr>
-<td>Aspect ratio</td>
-<td>4:3</td>
-<td>none</td>
+<td>400</td>
+<td>Lorem</td>
+<td>Lorem ipsum.</td>
+<td></td>
 </tr>
 <tr>
-<td>Quality</td>
-<td>&gt;=85%</td>
-<td>This parameter es very important when it comes to JPEG and other image compression file types. This parameter controls the balance between different characteristics that manage quality and compression. The lower the quality value, the higher the compression will be. The result would be a very compressed image that will be very light and low-quality, possibly, with a large number of artifacts. This is the minimum recommended value</td>
+<td>422</td>
+<td>Lorem</td>
+<td>It is not possible to find a face in the provided pictures.</td>
+<td>Lorem ipsum.</td>
 </tr>
 <tr>
-<td>Optimal file size</td>
-<td>470kb</td>
-<td>none</td>
-</tr>
-<tr>
-<td>Accepted file size</td>
-<td>470kb - 10MB</td>
-<td>none</td>
-</tr>
-<tr>
-<td>Compression file type</td>
-<td>gzip</td>
-<td>Onboarding features the possibility of sending the information required for validation in a compressed format to optimize data transference during validation processes. If the information sent in the body of the startup request is compressed, the following string must be added to the header of the request: <code>"Content-Encoding": "gzip"</code></td>
+<td>404</td>
+<td>Lorem</td>
+<td><strong>1.</strong> A process cannot be found in the provided parameters. <br /> <strong>2.</strong> The <em>apikeyId</em> does not match the one n the database.</td>
+<td>Process not found.</td>
 </tr>
 </tbody>
 </table>

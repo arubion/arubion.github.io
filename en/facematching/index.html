@@ -486,13 +486,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#process-validation-request" class="md-nav__link">
-    Process validation request
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#error-codes" class="md-nav__link">
     Error codes
   </a>
@@ -520,78 +513,20 @@
                 
                   <h1>Facematching</h1>
                 
-                <p>This operation receives 2 images: front view of the identity document and a frontal photograph (selfie) of the end-user. This operation gives as a result a similarity percentage (score) between the frontal photo in the identification document and the fontal photograph of the end-user. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h2 id="startup-request">Startup request</h2>
 <ul>
 <li>
-<p>Endpoint: <code>https://onboardingtest.did.cyxtera.com/v1/face-matching</code></p>
+<p>Endpoint: <code>Lorem ipsum dolor sit amet</code></p>
 </li>
 <li>
-<p>HTTP Method: <code>POST</code>  </p>
+<p>HTTP Method: <code>Lorem ipsum dolor sit amet</code>  </p>
 </li>
-<li>Header: <code>x-api-key</code><ul>
-<li>Api-key value of the secured entity. This value is unique for each entity and is managed by Cyxtera.  </li>
+<li>Header: <code>Lorem ipsum dolor sit amet</code><ul>
+<li>Lorem ipsum dolor sit amet.  </li>
 </ul>
 </li>
-<li>
-<p>Body:</p>
-<pre><code>{
-    "sourceImage": "base64",
-    "targetImage": "base64",
-    "operations":["FACE_MATCHING"]
-}
-</code></pre>
-</li>
-<li>
-<p>Successful result:</p>
-<pre><code>{
-  "data": {
-    "processId": uuid
-  }
-}
-</code></pre>
-</li>
-<li>
-<p>Unsuccessful result:</p>
-<pre><code>{
-  "status":400,
-  "code": "FACIN001",
-  "message": "Required parameter missing"
-}
-</code></pre>
-</li>
-</ul>
-<h2 id="process-validation-request">Process validation request</h2>
-<ul>
-<li>Endpoint: <code>https://onboardingtest.did.cyxtera.com/v1/face-matching/{processId}</code></li>
-<li>HTTP Method: <code>GET</code></li>
-<li>Header: <code>x-api-key</code><ul>
-<li>Api-key value of the secured entity. This value is unique for each entity and is managed by Cyxtera.  </li>
-</ul>
-</li>
-<li>
-<p>Successful result:</p>
-<pre><code>{
-"data": {
-"faceMatching": {
-    "score": 97.13,
-    "status": "200"
-        }
-    }
-}
-</code></pre>
-</li>
-<li>
-<p>Unsuccessful result:</p>
-<pre><code>{
-"data": {
-    "faceMatching": {
-        "status":400,
-        "code": "FACIN001",
-        "message": "Required parameter missing"
-            }
-        }
-}
+<li>Body:<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 </code></pre>
 </li>
 </ul>
@@ -608,31 +543,31 @@
 <tbody>
 <tr>
 <td>400</td>
-<td>FACIN001</td>
+<td>Lorem</td>
 <td>The required parameter was not sent.</td>
 <td>Parameter <code>[PARAMETER]</code> not found</td>
 </tr>
 <tr>
 <td>400</td>
-<td>FACIN002</td>
+<td>Lorem</td>
 <td>The document photograph was not sent in Base64 format.</td>
 <td>Document image is not a valid base64 string.</td>
 </tr>
 <tr>
 <td>400</td>
-<td>FACIN003</td>
-<td>The user´s selfie was not sent in Base64 format.</td>
-<td>Selfie image is not a valid base64 string.</td>
+<td>Lorem</td>
+<td>Lorem ipsum.</td>
+<td></td>
 </tr>
 <tr>
 <td>422</td>
-<td>FACPR001</td>
+<td>Lorem</td>
 <td>It is not possible to find a face in the provided pictures.</td>
-<td>Face not found.</td>
+<td>Lorem ipsum.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>FACOU001</td>
+<td>Lorem</td>
 <td><strong>1.</strong> A process cannot be found in the provided parameters. <br /> <strong>2.</strong> The <em>apikeyId</em> does not match the one n the database.</td>
 <td>Process not found.</td>
 </tr>
