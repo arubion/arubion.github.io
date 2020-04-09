@@ -1,0 +1,596 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://arubion.github.io/admission_test/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Admission Test - James' Wrintings and Tutorials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#admission-test" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://arubion.github.io" title="James' Wrintings and Tutorials" class="md-header-nav__button md-logo">
+          
+            <img src="https://cdn.discordapp.com/attachments/697518026303602739/697518168956207244/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              James' Wrintings and Tutorials
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Admission Test
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/arubion/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+          <div id="translationMenu" style="display: none;" class="md-menu" tabindex="-1">
+            <ul class="md-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+              <li class="md-list-item" role="menuitem">
+                <a class="md-list-item__text" href="" onClick="goToTranslation(event, 'en' ,'en')">English</a>
+              </li>
+              <li class="md-list-item" role="menuitem">
+                <a class="md-list-item__text" href="" onClick="goToTranslation(event, 'en' ,'es')">Spanish</a>
+              </li>
+              <span class="md-divider"></span>
+              <li class="md-list-item" role="menuitem">
+                <a class="md-list-item__text" href="/en/translation">Translation HowTo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tw_tutorials/" class="md-tabs__link">
+          Technical Writing Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../misc/" class="md-tabs__link md-tabs__link--active">
+          Miscelaneous Stuff
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://arubion.github.io" title="James' Wrintings and Tutorials" class="md-nav__button md-logo">
+      
+        <img src="https://cdn.discordapp.com/attachments/697518026303602739/697518168956207244/logo.png" width="48" height="48">
+      
+    </a>
+    James' Wrintings and Tutorials
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/arubion/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Technical Writing Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Technical Writing Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tw_tutorials/" title="What is this?" class="md-nav__link">
+      What is this?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msword_styles/" title="MS Word Styles and List Styles" class="md-nav__link">
+      MS Word Styles and List Styles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msword_toc/" title="MS Word ToC Tutorial" class="md-nav__link">
+      MS Word ToC Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdown_mkdocs/" title="Markdown and MkDocs" class="md-nav__link">
+      Markdown and MkDocs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Miscelaneous Stuff
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Miscelaneous Stuff
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../misc/" title="What is this" class="md-nav__link">
+      What is this
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Admission Test" class="md-nav__link md-nav__link--active">
+      Admission Test
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../misc_stuff/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/master/docs/admission_test.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="admission-test">Admission Test</h1>
+<p>The following text consitutes the admission test I wrote to join Appgate (then Easy Solutions). I decided to write a review of a videogame I had started playing at the time named Paladins. The reason I opted to write this sort of content was that I could show a certain amount of technical knowledge while still showing my writing skills and knowledge of the English language. It is worth mentioning this was only the first stage of the admission process and it was originally written in September of 2017. </p>
+<h1 id="paladins-champions-of-the-realm">Paladins: Champions of the Realm</h1>
+<h2 id="introduction">Introduction</h2>
+<p>With certain frequency, a new game appears and becomes a big hit, a blockbuster, if you will. Said games redefine the market, at least in the foreseeable future. When World of Warcraft was released, forgive my cheekiness for putting it this way, it changed the game for all the video game studios interested in producing a massively multiplayer online role-playing game (MMORPG for short). There was a new standard, and thus, everyone decided to emulate, or at least try, the most successful formula they knew at the time.</p>
+<div style="text-align:center"><img src="https://cdn.discordapp.com/attachments/697518026303602739/697587876765892699/WoW-Classic-780x439.png" /></div>
+
+<p><center>The original king of the mountain: World of Warcraft</center>
+<br /> </p>
+<p>The videogame market soon became flooded with clones and attempts to capitalize on the success of Blizzard’s Entertainment MMORPG, however, few managed to replicate a portion of the success reached by WoW. In many cases though, a portion of that success was more than enough to be considered a success in on itself, which was the reasoning behind the birth of many mediocre games that followed after WoW’s footsteps.  This isn’t a new occurrence, or even exclusive to MMORPGs or PC gaming. Whenever something exceptionally successful in any media or platform appears, it will be replicated by someone else, to the point where that which made it special becomes dull, if only because of repetition. As stated at the beginning, every now and then, there’s a new king of the mountain, and the current king of the mountain is Blizzard’s most recent creation: Overwatch. As expected, many team based arena shooters appeared soon after to try and mooch off of the game’s success, some more successful than others, of course. This is the point where the main topic of this review appears.</p>
+<div style="text-align:center"><img src="https://media.discordapp.net/attachments/697518026303602739/697588651927928862/C2BFDebo-dejar-a-mis-hijos-jugar-con-Overwatch-portada-ok.png" /></div>
+
+<p><center>Overwatch, Blizzard's world famous hero shooter</center>
+<br /> </p>
+<p><a href="https://www.hirezstudios.com/">Hi-Rez studios</a> is a videogame studio known for its immensely popular, yet short-lived hit games, such as <a href="https://en.wikipedia.org/wiki/Tribes:_Ascend">TRIBES: Ascend</a> and <a href="https://en.wikipedia.org/wiki/Global_Agenda">Global Agenda</a>. Their most recent creation at the time had been <a href="https://www.smitegame.com/">Smite</a>, their own take on the MOBA/ARTS subgenre. And when the new king of the mountain’s steps could be heard in the distance, Hi-Rez decided to try their hand at doing what they did best: borrowing a concept and trying to put their own spin on it. Creating something that was familiar, yet different enough to be recognizable on its own. And that way <strong>Paladins: Champions of the realm</strong> was created and slated for release not too far from the actual release date of Overwatch.</p>
+<p>As it was to be expected, Paladins couldn’t replicate Overwatch’s overwhelming economic success and recognition, however it has a dedicated player base, constant technical support and development, and of course, a lot of positive reviews. Unfortunately, there has always been a nasty shadow looming every milestone and goal reached by Paladins: It has always been called a mediocre and uninspired free-to-play Overwatch clone. Thus, we ask ourselves the big question: Is it really? </p>
+<div style="text-align:center"><img src="https://media.discordapp.net/attachments/697518026303602739/697590807607377981/paladins-requisitos.png" /></div>
+
+<p><center>There are some undeniable similarities, of course</center>
+<br /> </p>
+<p>The purpose of this review is to find an answer to said question and judge the game based on its actual characteristics and features. If possible, further from the emotional veil that could be the perpetual Overwatch comparison. </p>
+<p>This review will analyze four different aspects of the game according to my experience and opinion to finally offer a conclusion. These will be: </p>
+<ul>
+<li>Technical aspects </li>
+<li>Gameplay, </li>
+<li>Design and monetization </li>
+</ul>
+<p>At the end, at least according to my judgment, we’ll see if Paladins is worth playing or if it is another worthless Overwatch clone destined for failure. </p>
+<h2 id="technical-aspects">Technical aspects</h2>
+<p>On a technical level, Paladins isn’t as polished as its triple-A Blizzard counter-part. This is one of the aspects where Hi-Rez does poorly very frequently. Paladins works and is optimized enough to run smoothly on low-end computers; however, glitches and bugs can be found rather often, some which could make the game unplayable, at least for the match when they occur. An example of these are a very particular and short freeze which occurs right after the first minute mark for everyone in the match and a glitch in which textures and animations will freeze in such a way that nothing is visible on the screen, forcing the player to restart the game and turn-off DX12 support. </p>
+<p>One of the problems frequently found by players, and which has been addressed in different support threads online, is the way the game runs, not on low-end computer, but on the middle of the spectrum. Inexplicable FPS drops on computers that shouldn’t suffer them are actually rather frequent. When finding said problem, the most intuitive solution would be to set the game to low or minimum settings; however, in the case of Paladins, that isn’t so. Paladins is rather intensive in the usage of processing power, so when setting the game to minimum, the actual performance gain may be negligible. The reason is actually fairly simple. Since the game is processor intensive, when set to minimum, it will stop using the GPU and will put <strong>the entire load on the processor</strong>. A mid-range processor may not be able to run the game smoothly by itself, as a consequence, the game’s performance may be seriously affected. The actual solution would be to set the game to high or maximum settings, that way the strain is split more evenly between the processor and the GPU which increases performance greatly and makes FPS drops a non-issue. The fact that the game isn’t very polished may be forgiven if only because of the fact that it’s still in beta testing phase. If these problems continue when the game is officially released, it would be an egregious offense.  </p>
+<p>Another issue that is worth noting is the quality of Hi-Rez servers. Hi-Rez servers are easily strained and overloaded. They stop working very easily, which interrupts or outright ends matches with no solution whatsoever. On a bad day, servers can go down many times in one gaming session, and it’s even possible to exploit and manipulate them to escape from a match that you’re losing. Drop-hacks aren’t uncommon, and if you have ever experienced them, you would know they’re a blight for every game community they touch. Server quality is very important to maintain a constant and healthy player-base, and if it isn’t improved quickly, it may compromise one of the most important aspects for the survival of the game. </p>
+<h2 id="gameplay">Gameplay</h2>
+<p>This is where Paladins shines, and in many people’s opinion, outshines its competition. The gameplay is surprisingly fun and kinetic and every character feels unique and fun. Fun is an inescapable word when describing Paladins’ gameplay. The interface and view-models are displayed in a similar fashion to any other first person shooter, so it’s an already familiar experience. </p>
+<p>I would need to compare it to Overwatch to make my point clearly understood: When playing Overwatch, many characters despite having totally different roles may feel similar. A tank has tank-like skills, but in general has regular bulk compared with other characters. Some characters have been redesigned with that in mind, and because of that lost viability in the meta-game. This is purely speculation on my part, but this may come from a need to keep the game slightly balanced on a 1v1 level, making it possible for any character to stand toe-to-toe with any other character. This is a respectable decision, but one that I didn’t particularly enjoy. In Paladins though, the 1V1 balance between roles is almost totally forgone, resulting in amazingly fun characters and a focus on team-play that suited my tastes a lot more. Having said that, it’s a matter of preference, and as an individual, I prefer Hi-Rez’ take on the idea. This design philosophy may come with its drawbacks, for example, very unbalanced characters may appear once in a while, but seeing how fun the game actually is, I think it’s worth the risk. </p>
+<h2 id="design">Design</h2>
+<p>If I were to judge the game purely based on how polished the aesthetic of the game is, I would judge Overwatch the superior game of the two, and in many ways it is. Overwatch’s visual concept is leaps and bounds beyond that of Paladins. The characters are very attractive and have been refined to near-perfection, however this may have to do with the fact that said visual design and identity had been previously created for Titan, a cancelled MMORPG that was being made by the company before Overwatch. Compared to such refinement, Paladins pales in comparison. However, I will not judge Paladins only based on polish, because there’s a point in particular where it surpasses Overwatch: charm. </p>
+<p>Overwatch’s characters are efficient and well made, but bar a few exceptions, their personalities are a bit flat, generic and, there I say, boring. And that is okay, the game is polished in many other aspects, and this is also a matter of opinion. Paladins though, is where I’ve seen characters with the most individuality. Characters in paladins are amazingly fun, and in most cases, totally different from one another. Characters like Fernando, speaking <em>Spanglish</em> and putting his “latino heat” on every line and action, make the gameplay experience very enjoyable. Gameplay-wise, characters like Makoa for example, may be very similar to characters from Overwatch, Roadhog in this case. But when taking into account Makoa’s design and personality, his lines, skills and voice-work, I’d be forced to say that playing Paladins’ oversized turtle is the better experience of the two. Not all of Paladins’ characters are a hit, of course, some are very mediocre and bland. But seeing Hi-Rez’ Character design at its best makes is totally worth bearing with their worst. </p>
+<div style="text-align:center"><img src="https://cdn.discordapp.com/attachments/697518026303602739/697594556660711484/video-game-paladins-fernando-paladins-hd-wallpaper-preview.png" /></div>
+
+<p><center>Ferrrrnando!</center>
+<br /> </p>
+<h2 id="monetization">Monetization</h2>
+<p>Paladins is a free-to-play game and it delivers on that promise. Everything necessary to play the game is either available from the beginning or can be obtained through playing the game. All of the champions can be purchased with in-game currency and cards, which can be used to change the way your favorite champion is played, are unlocked through playing as well. Even, many cosmetics can be unlocked simply by playing or by opening chests using in-game currency, so it’s even a bit generous if anything. The game will only charge you for some premium packs, which are a very good deal, and for cosmetics. The fact that all champions present and future, can be unlocked with a single payment is very attractive to me as well, and separates it from some games with similar business models. My only complaint lies with chests. The fact that some of the coolest cosmetics in the game are trapped by a randomly generated number lottery is a bit frustrating, to say the least. If these cosmetic items were readily available for purchase in the premium store, Paladins’ monetization model would be perfect, hands down.</p>
+<p>Paladins has one of the best free-to-play monetization models found in PC gaming, and with some tuning it could be the best, at least from those I know. </p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Is Paladins an Overwatch clone? Yes, or at least that’s how it started. Gameplay-wise, many of Paladins’ characters are very similar, if not, an outright copy and paste from Overwatch’s characters. Like Fernando and Reinhardt, Makoa and Roadhog, or Viktor and Soldier 76. But after more than a year, both games have split ways and taken very different directions. This has been to Paladins benefit in my opinion, since it gave an alternative to people who wanted to play a team based battle arena shooter, but didn’t like Blizzard’s take on it. Paladins: Champions of the Realm may have started as a clone, but it plays and feels different enough to stand on its own as a different game which doesn’t deserve to be in the shadow of the giant that is Overwatch.  </p>
+<p>On a technical level, the game needs a lot of improvement, and hopefully many of its issues will be ironed out throughout the Beta testing phase, specially the quality of the servers, since this in particular hurts the game’s reputation and player base.</p>
+<p>At this point in time, Overwatch and Paladins are very different games with different design philosophies and gameplay. If you’re more interested on individual play and overall polish, Overwatch Is your game, but if you’re interests in very fun team-based gameplay, unique and entertaining characters which don’t take themselves too seriously, and last but not least, not paying a dime, Paladins is most definitely your game. </p>
+<p>Paladins: Champions of the Realm, isn’t a perfect game by no means, but it is a very good game on its own right and not just an Overwatch clone. It’s fantastic to play with friends and it’s more than worth to try out and spend some of your time on. </p>
+<p></br>
+</br></p>
+<p><strong>James Earl Hewitt Lara</strong></p>
+<p><strong>2017</strong></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../misc/" title="What is this" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                What is this
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../misc_stuff/" title="Others" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Others
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a8b5e56f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
